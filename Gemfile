@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'ruby', '2.1.1'
+ruby '2.1.1'
 # Bootstrap gem
 gem 'bootstrap-sass', '~> 3.2.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
