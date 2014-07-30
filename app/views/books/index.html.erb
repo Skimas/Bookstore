@@ -1,7 +1,33 @@
-<br>
-<h1>Visos apzvalgos</h1>
+<div class="container padded2">
+     <div class="row">
 
-<% @books.each do |book| %>
-  <h3><%= link_to book.name, book %></h3>
-  <p><%= book.description %></p>
-<% end %>
+<div class="col-sm-10 blog">
+
+<%= link_to 'Nauja apzvalga', new_book_path, class: "btn btn-default" %>
+
+               <section>
+               <% @books.each do |book| %>
+               <h1><%= link_to book.name, book %></h1>
+               <p><span class="glyphicon glyphicon-user"></span> Paskelbė: Ievuskinas</p>
+               <p><span class="glyphicon glyphicon-time"></span> Data: 2014-01-23, 11:00val</p>
+               <p><span class="glyphicon glyphicon-book"></span> Komentarai(2)</p>
+               <img src="images/blog2.jpg" class="img-responsive">
+               <hr>
+               <p><%= book.description %></p>
+               <%= link_to 'Skaityti daugiau', book, class: "btn btn-default" %>
+               <br><br>
+               <% end %>
+               </section>
+               <br>
+               <ul class="pagination">
+                   <li><a href="#">&laquo;</a></li>
+                   <li class="active"><a href="#">1</a></li>
+                   <li><a href="#">2</a></li>
+                   <li><a href="#">3</a></li>
+                   <li><a href="#">4</a></li>
+                   <li><a href="#">5</a></li>
+                   <li><a href="#">&raquo;</a></li>
+               </ul>
+          </div>
+          </div>
+          </div>
